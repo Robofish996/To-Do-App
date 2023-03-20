@@ -26,3 +26,9 @@ As well as your app looking beautiful and functioning as expected, at the very l
 • Strike through tasks on the list
 
 • Save tasks in their expected states and order even after the browser has been closed
+
+In addition to that functionality, make sure your app looks good using CSS, animation and JavaScript where necessary.
+
+Think about what would make an app such as this useful for yourself and what will take your project above and beyond the brief within a realistic timeframe. If you don't find your own app particularly useful, chances are nor will it's users!
+
+Some design inspiration to get you started
