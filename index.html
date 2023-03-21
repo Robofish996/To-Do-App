@@ -9,60 +9,37 @@
 
     <title>To-Do App</title>
 </head>
-
 <body>
     <header>
+        <h1>To-Do App</h1>
     </header>
     <main>
-
-<div class="grid-container">
-        <div class="div1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!</p>
-        </div>
-        <div class="div2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!</p>
-        </div>
-        <div class="div3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!</p>
-        </div>
-        <div class="div4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe omnis expedita nesciunt in
-                recusandae ea! Illum vel vitae exercitationem voluptate dolorem maiores, voluptas ratione nam quaerat
-                molestiae dolores odit!</p>
-        </div>
-    </div>
-
+        <section id="task-list">
+            <!-- Your task list goes here -->
+        </section>
+        <form id="add-task-form">
+            <input type="text" id="task-name" placeholder="Enter task name">
+            <input type="date" id="due-date" placeholder="Due date">
+            <button type="submit">Add task</button>
+        </form>
     </main>
-    <footer></footer>
-</body>
-<script src="javascript/js_main.js"></script>
+    <footer>
+        <p>&copy; 2023 To-Do App</p>
+    </footer>
+    <script src="javascript/js_main.js"></script>
+  </body>
+  
+  <template id="task-template">
+      <div class="task">
+          <label>
+              <input type="checkbox">
+              <span class="task-name"></span>
+              <span class="due-date"></span>
+          </label>
+          <button class="edit-button">Edit</button>
+          <button class="delete-button">Delete</button>
+      </div>
+  </template>
+
 
 </html>
