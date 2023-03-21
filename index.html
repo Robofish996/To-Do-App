@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
     <title>To-Do App</title>
 </head>
 <body>
     <header>
         <h1>To-Do App</h1>
     </header>
-    <main>
-        <section id="task-list">
-            <!-- Your task list goes here -->
-        </section>
+    <div class="container">
         <form id="add-task-form">
-            <input type="text" id="task-name" placeholder="Enter task name">
-            <input type="date" id="due-date" placeholder="Due date">
-            <button type="submit">Add task</button>
+            <label for="task-name">Enter task name</label>
+            <input type="text" id="task-name" placeholder="Enter task name" required>
+            <label for="task-desc">Enter task description</label>
+            <input type="text" id="task-desc" placeholder="Enter task description">
+            <label for="due-date">Due date:</label>
+            <input type="date" id="due-date" name="due-date" required>
+            <label for="due-time">Due time:</label>
+            <input type="time" id="due-time" name="due-time" required>
+            <button type="submit" class="add-btn">Add task</button>
         </form>
-    </main>
+        <div class="task-list-container">
+            <section id="task-list">
+                <!-- Your task list goes here -->
+            </section>
+        </div>
+    </div>
     <footer>
         <p>&copy; 2023 To-Do App</p>
     </footer>
     <script src="javascript/js_main.js"></script>
-  </body>
-  
-  <template id="task-template">
-      <div class="task">
-          <label>
-              <input type="checkbox">
-              <span class="task-name"></span>
-              <span class="due-date"></span>
-          </label>
-          <button class="edit-button">Edit</button>
-          <button class="delete-button">Delete</button>
-      </div>
-  </template>
-
-
+</body>
+<template id="task-template">
+    <div class="task">
+        <label>
+            <input type="checkbox">
+            <span class="task-name"></span>
+            <span class="task-desc"></span>
+            <span class="due-date"></span>
+            <span class="due-time"></span>
+        </label>
+        <button class="edit-btn">Edit</button>
+        <button class="delete-btn">Delete</button>
+    </div>
+</template>
 </html>
