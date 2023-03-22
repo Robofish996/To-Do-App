@@ -2,6 +2,7 @@
 const taskList = document.querySelector('#task-list');
 const addTaskForm = document.querySelector('#add-task-form');
 
+
 // Load saved tasks from localStorage or set to an empty array
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
