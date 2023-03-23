@@ -4,7 +4,11 @@
   margin: 0;
   padding: 0;
 }
-
+body{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
 /* Style the main container */
 .container {
   display: flex;
@@ -29,7 +33,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
 }
 header h1 {
   font-size: 36px;
@@ -49,6 +52,8 @@ label {
 
 header h1 {
   margin: 0;
+  color:white;
+  text-decoration: underline;
 }
 
 /* Style the task list */
@@ -70,9 +75,14 @@ header h1 {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+label{
+  background-color: grey;
+}
+
 .task label {
   flex-grow: 1;
   margin-right: 10px;
+  background-color: white;
 }
 
 
@@ -98,7 +108,8 @@ header h1 {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  background-color: #fff;
+  width: 50%;
+
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
