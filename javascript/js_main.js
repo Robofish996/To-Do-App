@@ -26,6 +26,12 @@ function renderTaskList() {
     // Create a label for the task name
     const taskNameEl = document.createElement('label');
     taskNameEl.textContent = task.name;
+    const taskDueDateEl = document.createElement('label');
+    taskDueDateEl.textContent = task.dueDate;
+    
+
+  
+
 
     // Create a checkbox for the task completion status
     const taskCompletedEl = document.createElement('input');
@@ -56,8 +62,10 @@ function renderTaskList() {
     // Append the task name, completion checkbox, edit button, and delete button to the task element
     taskEl.appendChild(taskCompletedEl);
     taskEl.appendChild(taskNameEl);
+    taskEl.appendChild(taskDueDateEl);
     taskEl.appendChild(editButtonEl);
     taskEl.appendChild(deleteButtonEl);
+    
 
     // Add an event listener to the task completion checkbox
     taskCompletedEl.addEventListener('change', () => {
@@ -68,7 +76,9 @@ function renderTaskList() {
     });
 
     // Append the task element to the task list
+    
     taskList.appendChild(taskEl);
+    
   });
 }
 
