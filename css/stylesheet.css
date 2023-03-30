@@ -35,8 +35,7 @@ header {
   justify-content: center;
 }
 header h1 {
-  font-size: 48px;
-  font-family: cursive;
+  font-size: 36px;
   text-decoration: underline;
 }
 
@@ -55,6 +54,8 @@ header h1 {
   margin: 0;
   color:white;
   text-decoration: underline;
+  text-decoration-style: wavy;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /* Style the task list */
@@ -134,6 +135,7 @@ label{
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 
@@ -184,17 +186,9 @@ footer {
 .task.completed label {
   text-decoration: line-through;
 }
-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
 
-button:hover {
-  background-color: #444;
-  transform: scale(1.1);
+.textHeading{
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
 }
