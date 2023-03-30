@@ -13,9 +13,9 @@
     </header>
     <div class="container">
         <form id="add-task-form">
-            <label for="task-name">Enter task name</label>
+            <label for="task-name" class="textHeading">Enter task name:</label>
             <input type="text" id="task-name" placeholder="Enter task name" required>
-            <label for="due-date">Due date:</label>
+            <label for="due-date" class="textHeading">Due date:</label>
             <input type="date" id="due-date" name="due-date" required>
             <button type="submit" class="add-btn">Add task</button>
         </form>
@@ -35,9 +35,8 @@
         <label>
             <input type="checkbox">
             <span class="task-name"></span>
-            <span class="task-desc"></span>
             <span class="due-date"></span>
-            <span class="due-time"></span>
+            
         </label>
         <button class="edit-btn">Edit</button>
         <button class="delete-btn">Delete</button>
